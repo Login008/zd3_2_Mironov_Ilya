@@ -1,7 +1,6 @@
 package com.example.zd3_2
 
 import android.content.Intent
-import android.content.IntentSender.OnFinished
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
