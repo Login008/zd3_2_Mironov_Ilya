@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:id="@+id/questsView"
+    android:orientation="vertical"
+    tools:context=".QuestsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt"
+            android:onClick="goBack"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="Back"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="150dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSearch"
+            android:backgroundTint="@drawable/edit"
+            android:layout_marginTop="10dp"
+            android:textCursorDrawable="@drawable/coursor"
+            android:hint="Type the name of the movie"
+            android:textColor="@color/aquamarine"
+            android:textColorHighlight="@color/aquamarine"
+            android:textColorHint="@color/white"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/butSearch"
+            android:background="@drawable/bt"
+            android:onClick="Search"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="Search"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="10"
+        android:rowCount="10"
+        tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

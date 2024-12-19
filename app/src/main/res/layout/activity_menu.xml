@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="horizontal"
+    android:gravity="center"
+    tools:context=".Menu">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="20dp">
+
+            <ImageButton
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/icon_back"
+                android:onClick="channel1"
+                android:src="@drawable/button1"
+                tools:ignore="SpeakableTextPresentCheck"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Кинопоиск"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                tools:ignore="TextSizeCheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="20dp">
+
+            <ImageButton
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/icon_back"
+                android:onClick="channel2"
+                android:src="@drawable/button2"
+                tools:ignore="SpeakableTextPresentCheck"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Иви"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                tools:ignore="TextSizeCheck"/>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginRight="40dp">
+
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/icon_back"
+            android:onClick="channel3"
+            android:src="@drawable/button3"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Premier"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            tools:ignore="TextSizeCheck"/>
+    </LinearLayout>
+
+</LinearLayout>
